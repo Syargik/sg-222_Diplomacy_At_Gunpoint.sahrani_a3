@@ -20,14 +20,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10668.354,234.50761,9422.1934};
-		dir[]={-0.042094693,-0.56476325,-0.82422072};
-		up[]={-0.028806353,0.82525313,-0.56403577};
-		aside[]={-0.99872893,8.9261448e-08,0.051008567};
+		pos[]={10662.935,167.34709,9217.7617};
+		dir[]={0.2423557,-0.56355911,0.78974712};
+		up[]={0.16533561,0.82607448,0.5387665};
+		aside[]={0.95601308,-1.2048986e-08,-0.29337841};
 	};
 };
 binarizationWanted=0;
-sourceName="sg@222_Diplomacy_At_Gunpoint";
+sourceName="sg@229_Diplomacy_At_Gunpoint";
 addons[]=
 {
 	"A3_Modules_F",
@@ -989,13 +989,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10666.716,154.91606,9244.2646};
-				angles[]={0,4.7128963,0};
+				angles[]={0,4.7128949,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this spawn { " \n " " \n "    sleep 1800;  " \n "    [ " \n "        _this, " \n "        ""Открыть дверь"", " \n "        ""\a3\missions_f_oldman\data\img\holdactions\holdAction_follow_start_ca.paa"", " \n "        ""\a3\missions_f_oldman\data\img\holdactions\holdAction_follow_start_ca.paa"", " \n "        ""(_this distance _target < 2)"", " \n "        ""_caller distance _target < 2"", " \n "        {}, " \n "        {}, " \n "        { " \n "            embassy setVariable ['bis_disabled_Door_3', 0]; " \n "        }, " \n "        {}, " \n "        [], " \n "        3, " \n "        0, " \n "        true, " \n "        false " \n "    ] call BIS_fnc_holdActionAdd; " \n "}; ";
+				init="this spawn { " \n " " \n "    sleep 300;  " \n "    [ " \n "        _this, " \n "        ""Открыть дверь"", " \n "        ""\a3\missions_f_oldman\data\img\holdactions\holdAction_follow_start_ca.paa"", " \n "        ""\a3\missions_f_oldman\data\img\holdactions\holdAction_follow_start_ca.paa"", " \n "        ""(_this distance _target < 2)"", " \n "        ""_caller distance _target < 2"", " \n "        {}, " \n "        {}, " \n "        { " \n "            embassy setVariable ['bis_disabled_Door_3', 0], hint str ""Для тестов миссии включена задержка в 5 минут""; " \n "        }, " \n "        {}, " \n "        [], " \n "        3, " \n "        0, " \n "        true, " \n "        false " \n "    ] call BIS_fnc_holdActionAdd; " \n "}; ";
 			};
 			id=99;
 			type="Land_Laptop_unfolded_F";
