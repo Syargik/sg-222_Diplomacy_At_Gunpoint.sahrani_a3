@@ -14,28 +14,26 @@ missionNamespace setVariable ["a3a_endMissionTime", 7200, true]; // 7200 - вр�
 			
 		if ((east countside playableUnits) < CrititalLosesEast) then {
 			srv_triggerFinished = true;
-			sleep 10;
-		["КАС разгромили ДРС! Победа Атаки", west] call a3a_fnc_endMission;}; // Победа WEST
+			["КАС разгромили ДРС! Победа Атаки", west] call a3a_fnc_endMission; // Победа WEST
+		};
 		
 		if ((west countside playableUnits) < CrititalLosesWest) then {
 			srv_triggerFinished = true;
-			sleep 10;
-		["ДРС разгромили КАС! Победа обороны", east] call a3a_fnc_endMission;}; // Победа EAST
+			["ДРС разгромили КАС! Победа обороны", east] call a3a_fnc_endMission; // Победа EAST
+		};
 		
 		if (mkk_platform_missionTime >= a3a_endMissionTime) then { 
 			srv_triggerFinished = true;
-		["ДРС удержала под контролем посольство!", east] call a3a_fnc_endMission; // Победа по окончанию таймера
+			["ДРС удержала под контролем посольство!", east] call a3a_fnc_endMission; // Победа по окончанию таймера
 		};
 
 		if (missionNamespace getVariable ["target1k", false]) then {
             srv_triggerFinished = true;
-            sleep 10;
             ["Посол США опознан!", east] call a3a_fnc_endMission;
         };
 
 		if (missionNamespace getVariable ["target1ZoneEntered", true]) then {
             srv_triggerFinished = true;
-            sleep 10;
             ["Посол США был эвакуирован!", west] call a3a_fnc_endMission;
         };
 

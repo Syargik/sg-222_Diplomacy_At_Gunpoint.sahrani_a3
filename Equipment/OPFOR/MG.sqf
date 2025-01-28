@@ -10,6 +10,7 @@ _unit addBackpack "B_Carryall_Base";
 _unit addItem "rhs_100Rnd_762x54mmR_7N13";
 _unit addWeapon "mkk_VTN_PKMN";
 _unit addPrimaryWeaponItem "rhs_acc_pso1m2";
+_unit addPrimaryWeaponItem "mkk_VTN_MUZZLE_FLASHSUPRESSOR_PKM2";
 
 removeBackpack _unit;
 
