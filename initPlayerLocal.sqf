@@ -9,7 +9,7 @@ if (!isDedicated) then {
 
 if (hasInterface) then {
     if (side player == east) then {
-        waitUntil {sleep 1800; a3a_var_started};
+        waitUntil {sleep 300; a3a_var_started};
         [player,"Опознать тело",
         "a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forcerespawn_ca.paa",
         "a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forcerespawn_ca.paa",
@@ -25,7 +25,7 @@ if (hasInterface) then {
 };
 
 if (hasInterface) then {
-    waitUntil {sleep 2700; a3a_var_started};
+    waitUntil {sleep 300; a3a_var_started};
     if (player == target1) then {
         private _markerName = "evacZone";
         while { target1ZoneEntered == false } do {
@@ -40,7 +40,7 @@ if (hasInterface) then {
 
 if (hasInterface) then {
     if (side player == west) then {
-        waitUntil {sleep 2700; a3a_var_started};
+        waitUntil {sleep 300; a3a_var_started};
         private _markerName = "evacZone";
         private _actionAdded = false;    
         while { target1ZoneEntered == false } do {
