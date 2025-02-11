@@ -6,9 +6,12 @@
         cam = "camera" camCreate [0, 0, 0];
         cam cameraEffect ["internal", "Back", "uavrtt"];
         cam attachTo [media1, [0, 0, 0.3]]; // media1 - назавние переменной объекта, к которому будет прикреплена камера
-        hint str "Камера 1";
-        cam camSetFov 0.5; // FOV камеры
-        cam camSetTarget [10589.173, 9184.359, 5.918]; // Позиция x,y,z куда будет смотреть камера
+        private _player = player; 
+        if (local _player) then {
+            hint "Камера 1";
+        };
+        cam camSetFov 1; // FOV камеры
+        cam camSetTarget [6562.993, 3962.198, 0]; // Позиция x,y,z куда будет смотреть камера
         cam camCommit 0;
         "uavrtt" setPiPEffect [0]; // 0 - обычный режим, 1 - ПНВ, 2 - теплак
         showUAVFeed true;
@@ -23,9 +26,12 @@
         cam = "camera" camCreate [0, 0, 0];
         cam cameraEffect ["internal", "Back", "uavrtt"];
         cam attachTo [media2, [0, 0, 0]];
-        hint str "Камера 2";
-        cam camSetFov 0.5;
-        cam camSetTarget [10566.053, 9304.753, 8.206];
+        private _player = player; 
+        if (local _player) then {
+            hint "Камера 2";
+        };
+        cam camSetFov 1;
+        cam camSetTarget [6560.719, 4283.120, 12.822];
         cam camCommit 0;
         "uavrtt" setPiPEffect [0];
         showUAVFeed true;
@@ -40,9 +46,12 @@
         cam = "camera" camCreate [0, 0, 0];
         cam cameraEffect ["internal", "Back", "uavrtt"];
         cam attachTo [media3, [0, 0, 0.3]];
-        hint str "Камера 3";
-        cam camSetFov 0.5;
-        cam camSetTarget [10761.937, 9342.09, 4.039];
+        private _player = player; 
+        if (local _player) then {
+            hint "Камера 3";
+        };
+        cam camSetFov 1;
+        cam camSetTarget [6830.747, 4255.911, 25.303];
         cam camCommit 0;
         "uavrtt" setPiPEffect [0];
         showUAVFeed true;
@@ -57,9 +66,12 @@
         cam = "camera" camCreate [0, 0, 0];
         cam cameraEffect ["internal", "Back", "uavrtt"];
         cam attachTo [media4, [0, 0, 0.3]];
-        hint str "Камера 4";
-        cam camSetFov 0.5;
-        cam camSetTarget [10802.877, 9174.883, 7.219];
+        private _player = player; 
+        if (local _player) then {
+            hint "Камера 4";
+        };
+        cam camSetFov 1;
+        cam camSetTarget [6887.873, 3952.735, 20.485];
         cam camCommit 0;
         "uavrtt" setPiPEffect [0];
         showUAVFeed true;

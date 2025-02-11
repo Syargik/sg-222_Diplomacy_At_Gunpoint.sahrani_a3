@@ -14,7 +14,7 @@ removeBackpack _unit;
 _unit forceAddUniform "U_C_FormalSuit_01_black_F";
 
 // Vest with items:
-_unit addVest "rhs_belt_holster";
+_unit addVest "KoraKulon_Tarzan_B";
 for '_i' from 1 to 5 do { _unit addItemToVest 'rhsusf_mag_17Rnd_9x19_FMJ';};
 
 // Backpack with items:
