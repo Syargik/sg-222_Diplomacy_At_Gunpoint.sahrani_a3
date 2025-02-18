@@ -7,9 +7,8 @@ _unit addBackpack "B_Carryall_Base";
 
 // Weapons with attachments:
 
-_unit addItem "vtn_pg7v";
-_unit addWeapon "vtn_pg7vl";
-_unit addSecondaryWeaponItem "vtn_optic_pgo7v";
+_unit addItem "vtn_pg7vl";
+_unit addWeapon "vtn_rpg7v2_up7v";
 
 _unit addItem "rhs_30Rnd_545x39_7N10_AK";
 _unit addWeapon "rhs_weap_ak74m_npz";

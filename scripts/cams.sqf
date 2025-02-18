@@ -7,8 +7,10 @@
         cam cameraEffect ["internal", "Back", "uavrtt"];
         cam attachTo [media1, [0, 0, 0.3]]; // media1 - назавние переменной объекта, к которому будет прикреплена камера
         private _player = player; 
-        if (local _player) then {
+        if ((player distance display) < 10) then {
             hint "Камера 1";
+            sleep 5;
+            hintSilent "";
         };
         cam camSetFov 1; // FOV камеры
         cam camSetTarget [6562.993, 3962.198, 0]; // Позиция x,y,z куда будет смотреть камера
@@ -27,8 +29,10 @@
         cam cameraEffect ["internal", "Back", "uavrtt"];
         cam attachTo [media2, [0, 0, 0]];
         private _player = player; 
-        if (local _player) then {
+        if ((player distance display) < 10) then {
             hint "Камера 2";
+            sleep 5;
+            hintSilent "";
         };
         cam camSetFov 1;
         cam camSetTarget [6560.719, 4283.120, 12.822];
@@ -47,8 +51,10 @@
         cam cameraEffect ["internal", "Back", "uavrtt"];
         cam attachTo [media3, [0, 0, 0.3]];
         private _player = player; 
-        if (local _player) then {
+        if ((player distance display) < 10) then {
             hint "Камера 3";
+            sleep 5;
+            hintSilent "";
         };
         cam camSetFov 1;
         cam camSetTarget [6830.747, 4255.911, 25.303];
@@ -67,8 +73,10 @@
         cam cameraEffect ["internal", "Back", "uavrtt"];
         cam attachTo [media4, [0, 0, 0.3]];
         private _player = player; 
-        if (local _player) then {
+        if ((player distance display) < 10) then {
             hint "Камера 4";
+            sleep 5;
+            hintSilent "";
         };
         cam camSetFov 1;
         cam camSetTarget [6887.873, 3952.735, 20.485];

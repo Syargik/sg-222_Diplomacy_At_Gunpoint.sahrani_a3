@@ -3,7 +3,10 @@ CrititalLosesEast = 7; // потери для красных
 
 missionNamespace setVariable ["a3a_endMissionTime", 7200, true]; // 7200 - время в секундах
 
-[] spawn {
+_evacZones = ["evacZone", "evacZone2", "evacZone3"];
+
+[_evacZones] spawn {
+	params ["_evacZones"];
 	target1k = false;
 	publicvariable "target1k";
 	target1ZoneEntered = false;
@@ -32,10 +35,18 @@ missionNamespace setVariable ["a3a_endMissionTime", 7200, true]; // 7200 - вр�
             ["Посол США опознан!", east] call a3a_fnc_endMission;
         };
 
-		if (missionNamespace getVariable ["target1ZoneEntered", true]) then {
-            srv_triggerFinished = true;
-            ["Посол США был эвакуирован!", west] call a3a_fnc_endMission;
-        };
+		{
+            if ((target1 distance getMarkerPos _x) < 50) then {
+                 srv_triggerFinished = true;
+            	["Посол США был эвакуирован!", west] call a3a_fnc_endMission;
+            };
+        } forEach _evacZones;
+
+		if (mkk_platform_missionTime >= 360 && ((embassy getVariable['bis_disabled_Door_6', 0])) == 1) then {
+			embassy setVariable ['bis_disabled_Door_6', 0, true];
+			[embassy, ["Door_6_sound_source", 1]] remoteExec ["animateSource", 0];
+			hint str "Дверь открыта через 6 минут. ТЕСТЫ";
+		}
 
     };
 };

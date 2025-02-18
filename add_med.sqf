@@ -12,6 +12,7 @@ if (!isServer) exitWith {};
 		(uniformContainer _x) additemcargoGlobal ["ACE_epinephrine", 2];
 		(uniformContainer _x) additemcargoGlobal ["ACE_splint", 2];
 		(uniformContainer _x) additemcargoGlobal ["ACE_EarPlugs", 1];
+		(uniformContainer _x) additemcargoGlobal ["ACE_painkillers", 1];
 	}
 	else
 	{
@@ -24,6 +25,7 @@ if (!isServer) exitWith {};
 		(uniformContainer _x) additemcargoGlobal ["ACE_epinephrine", 2];
 		(uniformContainer _x) additemcargoGlobal ["ACE_splint", 2];
 		(uniformContainer _x) additemcargoGlobal ["ACE_EarPlugs", 1];
+		(uniformContainer _x) additemcargoGlobal ["ACE_painkillers", 1];
 	};
 
         if (_x getVariable "ace_medical_medicClass" > 0) then {
