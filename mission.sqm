@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6728.7236,94.962471,3975.7744};
-		dir[]={-0.066044144,-0.56162167,0.82475567};
-		up[]={-0.044829708,0.82739347,0.55983031};
-		aside[]={0.99681032,-1.5657861e-08,0.079821862};
+		pos[]={6971.0396,62.949207,5583.1802};
+		dir[]={-0.11660217,-0.70328498,0.70128369};
+		up[]={-0.11535142,0.71090692,0.69376189};
+		aside[]={0.98646033,-2.6979251e-08,0.16401836};
 	};
 };
 binarizationWanted=0;
@@ -7588,14 +7588,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12334.334,11.186864,7076.6152};
-				angles[]={0.048959803,3.1295137,0};
+				position[]={12334.334,11.186834,7076.6157};
+				angles[]={0.048956487,3.1295149,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				lock="UNLOCKED";
+				init="[this,""BLUEFOR"",""REP""] call SerP_vehprocessor;";
 				textures="rhs_desert";
 			};
 			id=1149;
@@ -7722,7 +7723,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6970.3867,40.34185,5601.5576};
+				position[]={6970.3867,40.34285,5601.5576};
 				angles[]={6.2238965,4.4026108,0.030072024};
 			};
 			side="Empty";
@@ -7730,10 +7731,10 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
+				init="[this,""OPFOR"",""REP""] call SerP_vehprocessor;";
 			};
 			id=1150;
 			type="RHS_Ural_Repair_VV_01";
-			atlOffset=-0.00099945068;
 			class CustomAttributes
 			{
 				class Attribute0
