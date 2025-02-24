@@ -15,9 +15,9 @@ _veh additemcargoGlobal ['rhs_mag_m67', 15];
 _veh additemcargoGlobal ['rhs_mag_an_m8hc', 15];
 
 _veh addBackpackCargoGlobal ['mkk_Bag_Felin_cec_desert_45L_Radio', 1];
-_veh addBackpackCargoGlobal ['mkk_amf_felin_cec_des_backpack', 3];
+_veh addBackpackCargoGlobal ['mkk_amf_felin_cec_des_backpack', 4];
 
-_veh additemcargoGlobal ['LOP_H_6B27M_RACS', 3];
+_veh additemcargoGlobal ['LOP_H_6B27M_RACS', 4];
 _veh addItemCargoGlobal ["ToolKit", 2];
 
 _veh addItemCargoGlobal ["mkk_csw_cent_mag_m735", 8];

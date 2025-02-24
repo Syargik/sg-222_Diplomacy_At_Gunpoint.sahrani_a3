@@ -15,10 +15,10 @@ _veh additemcargoGlobal ['rhs_mag_rgd5', 10];
 _veh additemcargoGlobal ['rhs_mag_rdg2_white', 10];
 
 _veh addItemCargoGlobal ["ToolKit", 2];
-_veh addItemCargoGlobal ["rhs_6b7_1m_olive", 3];
+_veh addItemCargoGlobal ["rhs_6b7_1m_olive", 4];
 
 _veh addBackpackCargoGlobal ['mkk_anprc155_red', 1];
-_veh addBackpackCargoGlobal ['B_FieldPack_oli', 3];
+_veh addBackpackCargoGlobal ['B_FieldPack_oli', 4];
 
 _veh addItemCargoGlobal ["mkk_csw_t55a_mag_3of412", 8];
 _veh addItemCargoGlobal ["mkk_csw_t55a_mag_3bk17", 12];

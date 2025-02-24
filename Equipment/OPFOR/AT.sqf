@@ -23,7 +23,7 @@ removeBackpack _unit;
 _unit forceAddUniform "LOP_U_SLA_Fatigue_01";
 
 // Vest with items:
-_unit addVest _vest;
+_unit addVest "JCA_MCRP_V_CarrierRigKBT_01_combat_olive_F";
 for '_i' from 1 to 5 do { _unit addItemToVest 'rhs_30Rnd_545x39_7N10_AK';};
 for '_i' from 1 to 2 do { _unit addItemToVest 'rhs_30Rnd_545x39_AK_plum_green';};
 for '_i' from 1 to 2 do { _unit addItemToVest 'rhs_mag_rgd5';};

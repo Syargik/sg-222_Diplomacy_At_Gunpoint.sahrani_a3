@@ -12,8 +12,8 @@ if (hasInterface) then {
         [player,"Опознать тело",
         "a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forcerespawn_ca.paa",
         "a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forcerespawn_ca.paa",
-        "((_this distance target1) < 3) && !target1k && !(alive target1) && (mkk_platform_missionTime >= 300)",
-        "((_this distance target1) < 3) && (alive _this) && (mkk_platform_missionTime >= 300)",
+        "((_this distance target1) < 2) && !target1k && !(alive target1) && (mkk_platform_missionTime >= 1800)",
+        "((_this distance target1) < 2) && (alive _this) && (mkk_platform_missionTime >= 1800)",
         {},
         {},
         {cutText ["Посол США опознан!", "PLAIN"];target1k = true; publicvariable "target1k";},
@@ -29,8 +29,8 @@ if (hasInterface && (player == target1)) then {
         "Открыть дверь",
         "\a3\missions_f_oldman\data\img\holdactions\holdAction_follow_start_ca.paa",
         "\a3\missions_f_oldman\data\img\holdactions\holdAction_follow_start_ca.paa",
-        "(_this distance _target < 2) && (mkk_platform_missionTime >= 20) && (((embassy getVariable['bis_disabled_Door_6', 0])) == 1)",
-        "(_caller distance _target < 2) && (mkk_platform_missionTime >= 20) && (((embassy getVariable['bis_disabled_Door_6', 0])) == 1)",
+        "(_this distance _target < 2) && (mkk_platform_missionTime >= 1800) && (((embassy getVariable['bis_disabled_Door_6', 0])) == 1)",
+        "(_caller distance _target < 2) && (mkk_platform_missionTime >= 1800) && (((embassy getVariable['bis_disabled_Door_6', 0])) == 1)",
         {},
         {},
         {
@@ -45,3 +45,15 @@ if (hasInterface && (player == target1)) then {
         false
     ] call BIS_fnc_holdActionAdd;
 };
+
+if (hasInterface) then {
+    target1 addEventHandler [
+        "AnimChanged",
+        {
+            params ['_unit','_anim'];
+            if (_anim in ["laddercivilstatic", "ladderciviluploop", "laddercivildownloop"]) then {
+                _unit action ["ladderOff", embassy];
+            };
+        }
+    ];
+}

@@ -18,6 +18,8 @@ _veh additemcargoGlobal ['rhs_mag_M441_HE', 15];
 _veh additemcargoGlobal ['rhs_mag_m67', 15];
 _veh additemcargoGlobal ['rhs_mag_an_m8hc', 15];
 
+_veh additemcargoGlobal ['rhs_weap_M136', 2];
+
 _veh addBackpackCargoGlobal ['mkk_Bag_Felin_cec_desert_45L_Radio', 1];
 _veh addBackpackCargoGlobal ['mkk_amf_felin_cec_des_backpack', 2];
 

@@ -9,8 +9,6 @@
         private _player = player; 
         if ((player distance display) < 10) then {
             hint "Камера 1";
-            sleep 5;
-            hintSilent "";
         };
         cam camSetFov 1; // FOV камеры
         cam camSetTarget [6562.993, 3962.198, 0]; // Позиция x,y,z куда будет смотреть камера
@@ -31,8 +29,6 @@
         private _player = player; 
         if ((player distance display) < 10) then {
             hint "Камера 2";
-            sleep 5;
-            hintSilent "";
         };
         cam camSetFov 1;
         cam camSetTarget [6560.719, 4283.120, 12.822];
@@ -53,8 +49,6 @@
         private _player = player; 
         if ((player distance display) < 10) then {
             hint "Камера 3";
-            sleep 5;
-            hintSilent "";
         };
         cam camSetFov 1;
         cam camSetTarget [6830.747, 4255.911, 25.303];
@@ -75,8 +69,6 @@
         private _player = player; 
         if ((player distance display) < 10) then {
             hint "Камера 4";
-            sleep 5;
-            hintSilent "";
         };
         cam camSetFov 1;
         cam camSetTarget [6887.873, 3952.735, 20.485];

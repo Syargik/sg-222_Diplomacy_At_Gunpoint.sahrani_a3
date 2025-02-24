@@ -21,4 +21,4 @@ _veh additemcargoGlobal ['rhs_VOG25', 15];
 _veh additemcargoGlobal ['rhs_mag_rgd5', 10];
 _veh additemcargoGlobal ['rhs_mag_rdg2_white', 10];
 
-_veh addBackpackCargoGlobal ['mkk_anprc155_red', 1];
+_veh additemcargoGlobal ['rhs_weap_rpg26', 2];

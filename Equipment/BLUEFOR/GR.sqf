@@ -10,7 +10,7 @@ _unit addBackpack "B_Carryall_Base";
 _unit addItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
 _unit addWeapon "rhs_weap_m4a1_m203s";
 _unit addPrimaryWeaponItem "mkk_hlc_muzzle_SF3P_556";
-_unit addPrimaryWeaponItem "rhsusf_acc_ACOG";
+_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 
 removeBackpack _unit;
 

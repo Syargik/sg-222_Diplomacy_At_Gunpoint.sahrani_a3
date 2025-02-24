@@ -9,8 +9,7 @@ _unit addBackpack "B_Carryall_Base";
 
 _unit addItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
 _unit addWeapon "rhs_weap_m27iar_grip";
-_unit addPrimaryWeaponItem "rhsusf_acc_rotex5_grey";
-_unit addPrimaryWeaponItem "rhsusf_acc_ACOG";
+_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 
 removeBackpack _unit;
 

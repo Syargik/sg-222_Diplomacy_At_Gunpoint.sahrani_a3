@@ -42,10 +42,9 @@ _evacZones = ["evacZone", "evacZone2", "evacZone3"];
             };
         } forEach _evacZones;
 
-		if (mkk_platform_missionTime >= 360 && ((embassy getVariable['bis_disabled_Door_6', 0])) == 1) then {
+		if (mkk_platform_missionTime >= 4800 && ((embassy getVariable['bis_disabled_Door_6', 0])) == 1) then {
 			embassy setVariable ['bis_disabled_Door_6', 0, true];
 			[embassy, ["Door_6_sound_source", 1]] remoteExec ["animateSource", 0];
-			hint str "Дверь открыта через 6 минут. ТЕСТЫ";
 		}
 
     };
