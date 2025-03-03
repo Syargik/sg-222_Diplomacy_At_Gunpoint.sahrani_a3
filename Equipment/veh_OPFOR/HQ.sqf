@@ -16,7 +16,7 @@ _veh additemcargoGlobal ['ACE_suture', 30];
 
 _veh addItemcargoGlobal ['rhs_30Rnd_545x39_7N10_AK', 20];
 _veh additemcargoGlobal ['rhs_30Rnd_545x39_AK_plum_green', 10];
-_veh additemcargoGlobal ['rhs_mag_rgd5', 10];
-_veh additemcargoGlobal ['rhs_mag_rdg2_white', 10];
+_veh additemcargoGlobal ['rhs_mag_rgd5', 20];
+_veh additemcargoGlobal ['rhs_mag_rdg2_white', 20];
 
 _veh addBackpackCargoGlobal ['mkk_anprc155_red', 1];

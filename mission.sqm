@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6971.0396,62.949207,5583.1802};
-		dir[]={-0.11660217,-0.70328498,0.70128369};
-		up[]={-0.11535142,0.71090692,0.69376189};
-		aside[]={0.98646033,-2.6979251e-08,0.16401836};
+		pos[]={6988.2041,98.104576,5588.498};
+		dir[]={-0.40270299,-0.72134072,0.56352055};
+		up[]={-0.41940552,0.69257867,0.58689302};
+		aside[]={0.8136248,-6.1874744e-07,0.58143419};
 	};
 };
 binarizationWanted=0;
@@ -7870,7 +7870,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
-				init="[this,""OPFOR"",""BMD""] call SerP_vehprocessor; " \n "[this,""opCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf""; " \n "";
+				init="[this,""OPFOR"",""BMD""] call SerP_vehprocessor; " \n "[this,""opforCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf""; " \n "";
 			};
 			id=1154;
 			type="rhs_bmd2m";
@@ -8075,7 +8075,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
-				init="[this,""OPFOR"",""BMD""] call SerP_vehprocessor; " \n "[this,""opCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf""; " \n "";
+				init="[this,""OPFOR"",""BMD""] call SerP_vehprocessor; " \n "[this,""opforCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf""; " \n "";
 			};
 			id=1155;
 			type="rhs_bmd2m";
@@ -8316,7 +8316,7 @@ class Mission
 			};
 			id=1160;
 			type="Land_Document_01_F";
-			atlOffset=0.83337975;
+			atlOffset=0.82804489;
 		};
 		class Item42
 		{
@@ -18667,7 +18667,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opCrew"", true];";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="10. Наводчик-оператор БМД-2М";
 						isPlayable=1;
 						receiveRemoteTargets=1;
@@ -18721,7 +18721,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opCrew"", true];";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="11. Механик-водитель БМД-2М";
 						isPlayable=1;
 						class Inventory
@@ -19267,7 +19267,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opCrew"", true];";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="10. Наводчик-оператор БМД-2М";
 						isPlayable=1;
 						class Inventory
@@ -19319,7 +19319,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opCrew"", true];";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="11. Механик-водитель БМД-2М";
 						isPlayable=1;
 						class Inventory
@@ -22875,7 +22875,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
-				init="[this,""OPFOR"",""TANK""] call SerP_vehprocessor; " \n "[this,""opCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf""; " \n "";
+				init="[this,""OPFOR"",""TANK""] call SerP_vehprocessor; " \n "[this,""opforCrew"", ""all""] call compile preprocessFileLineNumbers ""bn_crew_control.sqf""; " \n "";
 				textures="sla";
 			};
 			id=2693;
@@ -22993,7 +22993,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opCrew"", true];";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="1. Командир экипажа Т-55А";
 						isPlayable=1;
 						class Inventory
@@ -23045,7 +23045,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opCrew"", true];";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="2. Оператор-наводчик Т-55А";
 						isPlayable=1;
 						class Inventory
@@ -23097,7 +23097,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opCrew"", true];";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="3. Механик-водитель Т-55А";
 						isPlayable=1;
 						class Inventory
@@ -23149,7 +23149,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opCrew"", true];";
+						init="[this,""OPFOR"",""CREW""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="4. Заряжающий Т-55А";
 						isPlayable=1;
 						class Inventory

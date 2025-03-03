@@ -19,3 +19,4 @@ _veh additemcargoGlobal ['rhs_mag_m67', 10];
 _veh additemcargoGlobal ['rhs_mag_an_m8hc', 10];
 
 _veh additemcargoGlobal ['rhs_weap_M136', 1];
+_veh additemcargoGlobal ['rhs_weap_M136_hedp', 1];

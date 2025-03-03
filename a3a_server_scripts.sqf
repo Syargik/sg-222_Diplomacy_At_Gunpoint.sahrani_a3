@@ -32,13 +32,13 @@ _evacZones = ["evacZone", "evacZone2", "evacZone3"];
 
 		if (missionNamespace getVariable ["target1k", false]) then {
             srv_triggerFinished = true;
-            ["Посол США опознан!", east] call a3a_fnc_endMission;
+            ["Посол США опознан!", east] call a3a_fnc_endMission; // Победа по опознанию
         };
 
 		{
             if ((target1 distance getMarkerPos _x) < 50) then {
                  srv_triggerFinished = true;
-            	["Посол США был эвакуирован!", west] call a3a_fnc_endMission;
+            	["Посол США был эвакуирован!", west] call a3a_fnc_endMission; // Победа по эвакуации
             };
         } forEach _evacZones;
 

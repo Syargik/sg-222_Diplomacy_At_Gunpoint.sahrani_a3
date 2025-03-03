@@ -9,17 +9,27 @@ if (!isDedicated) then {
 
 if (hasInterface) then {
     if (side player == east) then {
-        [player,"Опознать тело",
-        "a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forcerespawn_ca.paa",
-        "a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forcerespawn_ca.paa",
-        "((_this distance target1) < 2) && !target1k && !(alive target1) && (mkk_platform_missionTime >= 1800)",
-        "((_this distance target1) < 2) && (alive _this) && (mkk_platform_missionTime >= 1800)",
-        {},
-        {},
-        {cutText ["Посол США опознан!", "PLAIN"];target1k = true; publicvariable "target1k";},
-        {},
-        [],
-        10,0,true,false] call BIS_fnc_holdActionAdd;
+        [
+            player,
+            "Опознать тело",
+            "a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forcerespawn_ca.paa",
+            "a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forcerespawn_ca.paa",
+            "((_this distance target1) < 2) && !target1k && !(alive target1) && (mkk_platform_missionTime >= 1800)",
+            "((_this distance target1) < 2) && (alive _this) && (mkk_platform_missionTime >= 1800)",
+            {},
+            {},
+            {
+                cutText ["Посол США опознан!", "PLAIN"];
+                target1k = true;
+                publicvariable "target1k";
+            },
+            {},
+            [],
+            10,
+            0,
+            true,
+            false
+        ] call BIS_fnc_holdActionAdd;
     };
 };
 

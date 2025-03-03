@@ -17,3 +17,5 @@ _veh additemcargoGlobal ['rhs_mag_an_m8hc', 10];
 _veh additemcargoGlobal ['rhs_weap_M136', 1];
 
 _veh addItemCargoGlobal ["ace_mag_100rnd_127x99_mag_Tracer_Red", 4];
+
+_veh addBackpackCargoGlobal ['mkk_Bag_Felin_cec_desert_45L_Radio', 1];
