@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6988.2041,98.104576,5588.498};
-		dir[]={-0.40270299,-0.72134072,0.56352055};
-		up[]={-0.41940552,0.69257867,0.58689302};
-		aside[]={0.8136248,-6.1874744e-07,0.58143419};
+		pos[]={6909.3042,81.718315,5584.2251};
+		dir[]={0.74523675,-0.54661119,0.38190502};
+		up[]={0.48645854,0.83738708,0.24929127};
+		aside[]={0.45606634,-6.2398612e-08,-0.88995391};
 	};
 };
 binarizationWanted=0;
@@ -8316,7 +8316,7 @@ class Mission
 			};
 			id=1160;
 			type="Land_Document_01_F";
-			atlOffset=0.82804489;
+			atlOffset=0.83337975;
 		};
 		class Item42
 		{
@@ -14319,14 +14319,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12327.286,9.5975199,7072.0669};
-						angles[]={0,1.5814368,0};
+						position[]={12327.286,9.5975952,7072.0669};
+						angles[]={0,1.5814428,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
-						init="[this,""BLUEFOR"",""SL""] call SerP_unitprocessor;";
+						init="[this,""BLUEFOR"",""SL""] call SerP_unitprocessor;" \n "this setVariable [""opCrew"", true];";
 						description="1. 3rd Platoon Commander";
 						isPlayable=1;
 						class Inventory
@@ -14335,7 +14335,7 @@ class Mission
 					};
 					id=2516;
 					type="mkk_Survivor_B";
-					atlOffset=0.10246181;
+					atlOffset=0.10253716;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14506,7 +14506,7 @@ class Mission
 				formation="FILE";
 			};
 			id=2515;
-			atlOffset=0.10246181;
+			atlOffset=0.10253716;
 		};
 		class Item156
 		{
@@ -14520,14 +14520,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12327.258,8.2281199,7102.8862};
-						angles[]={0.014072005,1.5676669,6.2684684};
+						position[]={12327.258,8.2284393,7102.8857};
+						angles[]={0.014067354,1.5676721,6.2684722};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
-						init="[this,""BLUEFOR"",""SL""] call SerP_unitprocessor;";
+						init="[this,""BLUEFOR"",""SL""] call SerP_unitprocessor;" \n "this setVariable [""opCrew"", true];";
 						description="1. 3P1S Squad Leader";
 						isPlayable=1;
 						receiveRemoteTargets=1;
@@ -14537,7 +14537,7 @@ class Mission
 					};
 					id=2522;
 					type="mkk_Survivor_B";
-					atlOffset=0.12833977;
+					atlOffset=0.12864304;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15105,7 +15105,7 @@ class Mission
 				formation="FILE";
 			};
 			id=2521;
-			atlOffset=0.12833977;
+			atlOffset=0.12864304;
 		};
 		class Item157
 		{
@@ -17443,14 +17443,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6964.3232,38.723869,5608.1563};
-						angles[]={0.0092192264,2.8421562,6.2535267};
+						position[]={6964.3232,38.723839,5608.1558};
+						angles[]={0.0092153382,2.8421638,6.2535319};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor;";
+						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="1. Командир 1-го механизированного взвода";
 						isPlayable=1;
 						receiveRemoteTargets=1;
@@ -17460,7 +17460,6 @@ class Mission
 					};
 					id=2579;
 					type="mkk_Survivor_O";
-					atlOffset=-3.8146973e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17683,7 +17682,6 @@ class Mission
 				formation="FILE";
 			};
 			id=2578;
-			atlOffset=-3.8146973e-06;
 		};
 		class Item164
 		{
@@ -18183,14 +18181,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6885.3716,38.02116,5592.1367};
-						angles[]={0,2.978929,0};
+						position[]={6885.3721,38.021179,5592.1367};
+						angles[]={0,2.9789279,0};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor;";
+						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="1. Командир 2-го отделения 1-го механизированного взвода";
 						isPlayable=1;
 						receiveRemoteTargets=1;
@@ -18200,7 +18198,6 @@ class Mission
 					};
 					id=2594;
 					type="mkk_Survivor_O";
-					atlOffset=-3.8146973e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18768,7 +18765,6 @@ class Mission
 				formation="FILE";
 			};
 			id=2593;
-			atlOffset=-3.8146973e-06;
 		};
 		class Item166
 		{
@@ -18782,14 +18778,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6846.5552,36.897839,5584.0654};
-						angles[]={0,2.9111798,0};
+						position[]={6846.5552,36.897911,5584.0659};
+						angles[]={0,2.9111743,0};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
-						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor;";
+						init="[this,""OPFOR"",""SL""] call SerP_unitprocessor;" \n "this setVariable [""opforCrew"", true];";
 						description="1. Командир 3-го отделения 1-го механизированного взвода";
 						isPlayable=1;
 						receiveRemoteTargets=1;
@@ -18799,7 +18795,6 @@ class Mission
 					};
 					id=2606;
 					type="mkk_Survivor_O";
-					atlOffset=-3.8146973e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19366,7 +19361,6 @@ class Mission
 				formation="FILE";
 			};
 			id=2605;
-			atlOffset=-3.8146973e-06;
 		};
 		class Item167
 		{

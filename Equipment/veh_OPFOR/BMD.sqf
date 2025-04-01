@@ -27,5 +27,5 @@ _veh addItemCargoGlobal ["ToolKit", 2];
 _veh addItemCargoGlobal ["rhs_6b7_1m_olive", 2];
 _veh addItemCargoGlobal ["ace_mag_9m133", 2];
 
-_veh addBackpackCargoGlobal ['mkk_anprc155_red', 2];
+_veh addBackpackCargoGlobal ['mkk_anprc155_red', 1];
 _veh addBackpackCargoGlobal ['B_FieldPack_oli', 2];
